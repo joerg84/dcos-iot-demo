@@ -1,0 +1,30 @@
+{
+  "id": "/esri-gui",
+  "cmd": "nginx -g \"daemon off;\"",
+  "instances": 1,
+  "cpus": 1,
+  "mem": 128,
+  "container": {
+    "docker": {
+      "image": "mesosphere/esri_demo_nginx:0.1",
+      "forcePullImage": true,
+      "privileged": false,
+      "network": "HOST"
+    }
+  },
+  "labels": null,
+  "acceptedResourceRoles": [
+    "slave_public"
+  ],
+  "portDefinitions": [
+    {
+      "protocol": "tcp",
+      "port": 8080
+    },
+    {
+      "protocol": "tcp",
+      "port": 8081
+    }
+  ],
+  "requirePorts": true
+}
