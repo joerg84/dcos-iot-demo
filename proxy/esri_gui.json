@@ -13,7 +13,9 @@
     }
   },
   "labels": null,
-  "acceptedResourceRoles": null,
+   "acceptedResourceRoles": [	
+     "slave_public"		
+   ],
   "portDefinitions": [
     {
       "protocol": "tcp",
