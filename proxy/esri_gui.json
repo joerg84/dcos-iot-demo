@@ -2,7 +2,7 @@
   "id": "/esri-gui",
   "cmd": "nginx -g \"daemon off;\"",
   "instances": 1,
-  "cpus": 1,
+  "cpus": 0.5,
   "mem": 128,
   "container": {
     "docker": {
@@ -13,9 +13,7 @@
     }
   },
   "labels": null,
-  "acceptedResourceRoles": [
-    "slave_public"
-  ],
+  "acceptedResourceRoles": null,
   "portDefinitions": [
     {
       "protocol": "tcp",
